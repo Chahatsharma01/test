@@ -1,0 +1,16 @@
+<input type="file" (change)="onFileClick($event)" accept=".xlsx,.xls" />
+
+<table>
+  <thead>
+    <tr>
+
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let row of data">
+      <td *ngFor="let cell of row">
+        {{ cell}}
+      </td>
+    </tr>
+  </tbody>
+</table>
